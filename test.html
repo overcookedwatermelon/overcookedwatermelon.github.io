@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Love Story Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <audio id="background-music" autoplay loop>
+    <source src="background-music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <div id="game-container">
+    <div id="game-screen">
+      <img id="character" src="character.png" alt="Character">
+    </div>
+    <div id="story-box">
+      <h2 id="story-text">Once upon a time...</h2>
+    </div>
+  </div>
+  <div id="counter" class="counter"></div>
+  <script src="game.js"></script>
+</body>
+</html>

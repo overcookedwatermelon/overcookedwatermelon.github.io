@@ -1,0 +1,66 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #171717;
+  color: white; /* Set text color to white for better readability */
+}
+
+#game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#game-screen {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background-color: #171717;
+  text-align: center; /* Center the image horizontally */
+}
+
+#character {
+  max-width: 100%; /* Ensure the image does not exceed the width of its container */
+  max-height: 80vh; /* Limit the height of the image to 80% of the viewport height */
+  margin: auto; /* Center the image vertically */
+  display: block; /* Ensure the image is centered properly */
+}
+
+#story-box {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.story-text {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.counter {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 18px;
+}
+
+@media screen and (max-width: 600px) {
+  .counter {
+    bottom: unset;
+    top: 20px;
+  }
+}
